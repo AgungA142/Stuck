@@ -58,18 +58,19 @@ class BukuController extends Controller
             'genre' => 'required',
             'image' => 'image|file|max:2048',
             'deskripsi' => 'required',
-            'file' => 'file|mimes:pdf|max:10240',
+            'file' => 'file|mimes:pdf|max:10240|nullable',
             'category_id' => 'required',
         ]);
 
         $file = $request->file('file');
 
-        $filename = uniqid() . '.' . $file->extension();
+
 
         if ($request->file('image')) {
             $validatedData['image'] = $request->file('image')->store('buku-images');
         }
         if ($file) {
+            $filename = uniqid() . '.' . $file->extension();
             $validatedData['file'] = $file->storeAs('pdfs', $filename);
         }
 
@@ -124,19 +125,20 @@ class BukuController extends Controller
             'genre' => 'required',
             'image' => 'image|file|max:2048',
             'deskripsi' => 'required',
-            'file' => 'file|max:10240',
+            'file' => 'file|mimes:pdf|max:10240|nullable',
             'category_id' => 'required',
         ]);
 
         $file = $request->file('file');
 
-        $filename = uniqid() . '.' . $file->extension();
+
 
 
         if ($file) {
             if ($request->oldFile) {
                 Storage::delete($request->oldFile);
             }
+            $filename = uniqid() . '.' . $file->extension();
             $validatedData['file'] = $file->storeAs('pdfs', $filename);
         }
 

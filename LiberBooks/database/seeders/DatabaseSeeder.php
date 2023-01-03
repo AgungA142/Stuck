@@ -48,6 +48,19 @@ class DatabaseSeeder extends Seeder
 
         ]);
 
+        Buku::create([
+            'judul' => 'harry potter',
+            'penulis' => 'harry potter',
+            'penerbit' => 'harry potter',
+            'tahun_terbit' => '2020-03-11',
+            'genre' => 'Novel',
+            'image' => 'buku-images/Komik Musume no Tomodachi.png',
+            'deskripsi' => ' Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus adipisci dolore cum doloribus, debitis eos laudantium similique fugit aliquam inventore, necessitatibus harum praesentium porro itaque.',
+            'file' => 'pdfs/Komik Musume no Tomodachi.pdf',
+            'category_id' => 4
+
+        ]);
+
         Category::create([
             'name' => 'Novel',
             'image' => 'img/novel.png',

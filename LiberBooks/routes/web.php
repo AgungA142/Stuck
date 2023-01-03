@@ -46,8 +46,8 @@ Route::get('categories/{category:name}', function (Category $category) {
     ]);
 });
 
-Route::post('/favorites', [FavoriteController::class, 'store']);
-Route::delete('/favorites', [FavoriteController::class, 'destroy']);
+Route::post('/favorites/add', [FavoriteController::class, 'store']);
+Route::delete('/favorites/delete', [FavoriteController::class, 'destroy']);
 
 Route::get('/categories', function () {
     return view('categories', [

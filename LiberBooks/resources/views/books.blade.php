@@ -168,7 +168,7 @@
                                       <div id="button-container flex justify-center" >
                                       
                                         <div class="flex justify-end">
-                                          <form action="/favorites" method="post>
+                                          <form action="/favorites/add" method="post">
                                             @csrf
                                             <input type="hidden" name="buku_id" id="favorit" value="">
                                             {{-- <p>{{ $ids }}</p> --}}
@@ -194,7 +194,7 @@
                                             </button>
                                           </form>
   
-                                          <form action="/favorites" method="post">
+                                          <form action="/favorites/delete" method="post">
                                             @method('delete')
                                             @csrf
                                             <input type="hidden" name="buku_id" id="favorit-delete" value="">

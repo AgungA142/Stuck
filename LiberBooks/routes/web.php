@@ -110,7 +110,7 @@ Route::get('/dashboard', [UserController::class, 'index']);
 // favorite
 Route::get('/favorite', function () {
     return view('dashboard.favorite', [
-        'favorite' => Favorite::all()
+        'favorite' => Favorite::latest()->paginate(4)
     ]);
 })->name('favorite.index');
 

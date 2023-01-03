@@ -231,7 +231,6 @@
           
                   <a href="/admin/category" class="{{ Request::is('admin/category') ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500' }} hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"> Category </a>
           
-                  <a href="#" class="{{ Request::is('admin/favorited') ? 'border-indigo-500 text-indigo-600' : 'border-transparent text-gray-500' }} text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"> Favorited </a>
                 </nav>
                 <div class="hidden ml-6 p-0.5 rounded-lg items-center sm:flex">
                   <a href="{{ route('category.create') }}" class="ml-0.5 p-1.5 rounded-md shadow-sm text-[#8B7E74] hover:text-amber-800">
@@ -271,7 +270,11 @@
 
       <!-- Details sidebar -->
       <aside id="info" class="hidden w-96 bg-white p-8 border-l border-gray-200 overflow-y-auto">
-        <button onclick="closeInfo()" id="btn-close" class="btn-close bg-yellow-300">close</button>
+        <button onclick="closeInfo()" id="btn-close" class="btn-close">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 text-gray-500 hover:text-gray-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> 
+        </button>
         <div class="pb-16 space-y-6">
           <div>
             <div class="block w-full aspect-w-10 aspect-h-7 rounded-lg overflow-hidden">

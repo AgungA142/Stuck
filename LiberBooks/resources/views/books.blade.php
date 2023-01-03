@@ -104,13 +104,12 @@
                 <img src="{{ asset('storage/' . $b->image) }}" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
               </div>
               <div class="flex justify-between">
-                <p class="mt-4 text-sm font-semibold text-gray-900">{{ $b->judul }}</p>
-                <p class="mt-4 text-sm text-indigo-500 group-hover:text-indigo-600">{{ $b->genre }}</p>
+                <p class="mt-4 text-sm font-semibold text-gray-900 group-hover:text-indigo-600">{{ $b->judul }}</p>
+                <p class="mt-4 text-sm text-gray-900 group-hover:text-indigo-600">{{ $b->category->name }}</p>
                 </div>
                 <p class="mt-2 text-sm text-gray-700">By. {{ $b->penulis }}</p>
                 <p class="mt-2 text-sm text-gray-700">{!! $b->deskripsi !!}</p>
             </a>
-
             @endforeach
           </div>
         </div>
@@ -316,4 +315,17 @@
 
 
 </script>
+
+
+<nav class="mb-10 flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
+  <div class="-mt-px flex w-0 flex-1">
+    <a href="#" class="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+  </div>
+  <div class="hidden md:-mt-px md:flex">
+    <a href="#" class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"></a>
+    <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+    {{ $buku->links() }}
+    </a>
+  </div>
+</nav>
 @endsection

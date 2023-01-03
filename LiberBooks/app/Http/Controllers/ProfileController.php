@@ -84,7 +84,7 @@ class ProfileController extends Controller
             'name' => 'required|max:255',
             'username' => 'required|max: 255',
             'about' => 'nullable',
-            'image' => 'image|file|max:1024'
+            'image' => 'image|file|max:10240'
         ];
 
 

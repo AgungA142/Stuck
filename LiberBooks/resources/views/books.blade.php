@@ -150,7 +150,7 @@
                           <div>
                               <div class="pb-1 sm:pb-6">
                               <div>
-                                  <div class="relative h-40 sm:h-56">
+                                  <div class="relative h-96">
                                   <img id="buku-image" class="absolute h-full w-full object-cover" src="" alt="">
                                   </div>
                                   <div class="mt-6 px-4 sm:mt-8 sm:flex sm:items-end sm:px-6">
@@ -163,8 +163,8 @@
                                       </div>
                                       @auth
                                       <div class="mt-5 flex flex-wrap space-y-3 sm:space-y-0 sm:space-x-3">
-                                     <a id="download" href=""><button type="button" class="inline-flex w-full flex-shrink-0 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:flex-1">Download</button></a>
-                                      <a id="read" href=""><button type="button" class="inline-flex w-full flex-1 items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Read online</button></a>
+                                     <a id="download" href=""><button type="button" class="inline-flex w-full flex-shrink-0 items-center justify-center rounded-md border border-transparent bg-gray-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:flex-1">Download</button></a>
+                                      <a id="read" href=""><button type="button" class="inline-flex w-full flex-1 items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">Read online</button></a>
 
                                       <div id="button-container flex justify-center" >
                                       

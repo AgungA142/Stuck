@@ -52,7 +52,7 @@
           <div class="flex mt-4 items-center">
             <form action="/logout" method="post">
             @csrf
-            <button type="submit" class="rounded-md border border-transparent bg-[#8B7E74] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2">Logout</button>
+            <button type="submit" class="rounded-md border border-transparent bg-gray-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2">Logout</button>
             </form>
           </div>
         </div>

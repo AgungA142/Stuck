@@ -87,11 +87,11 @@ $user = Auth::user();
   <div class="md:hidden" id="mobile-menu" x-show="open">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+      <a href="/" class="{{ Request::is('/') ? 'bg-gray-900 text-white' : '' }} text-white-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
 
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">AllBooks</a>
+      <a href="/allbooks" class="{{ Request::is('allbooks') ? 'bg-gray-900 text-white' : '' }} text-white-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">AllBooks</a>
 
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Favorite</a>
+      <a href="/categories" class="{{ Request::is('categories') ? 'bg-gray-900 text-white' : '' }} text-white-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-sm font-medium">Category</a>
     </div>
   </div>
 </nav>

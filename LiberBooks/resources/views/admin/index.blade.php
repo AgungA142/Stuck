@@ -170,9 +170,9 @@
               @foreach ($buku as $b)
               <li id="kons" class="relative" onclick="detailBuku({{ $b->id }})" >
                 <!-- Current: "ring-2 ring-offset-2 ring-indigo-500", Default: "focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500" -->
-                <div class="ring-2 ring-offset-2 ring-indigo-500 group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden">
+                <div class="h-96 ring-2 ring-offset-2 ring-indigo-500 group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden">
                   <!-- Current: "", Default: "group-hover:opacity-75" -->
-                  <img data-id="{{ $b->id }}" src="{{ asset('storage/' . $b->image) }}" alt="" class="object-cover pointer-events-none image">
+                  <img data-id="{{ $b->id }}" src="{{ asset('storage/' . $b->image) }}" alt="" class="h-96 object-cover pointer-events-none image">
                   <button type="button" class="absolute inset-0 focus:outline-none">
                     <span class="sr-only">View details for {{ $b->judul }}</span>
                   </button>
@@ -201,9 +201,9 @@
         </button>
         <div class="pb-16 space-y-6">
           <div>
-            <div class="block w-full aspect-w-10 aspect-h-7 rounded-lg overflow-hidden">
+            <div class="h-96 block w-full aspect-w-10 aspect-h-7 rounded-lg overflow-hidden">
               {{-- <img src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80" alt="" class="object-cover"> --}}
-              <img id="buku-image" src="{{ asset('storage/1.jpg') }}" alt="" class="object-cover">
+              <img id="buku-image" src="{{ asset('storage/1.jpg') }}" alt="" class="h-96 object-cover">
             </div>
             <div class="mt-4 flex items-start justify-between">
               <div>

@@ -57,11 +57,11 @@
 {{-- feature section --}}
       
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-amber-50 mt-6">
-  <div class="text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+<div class="relative bg-amber-50">
+  <div class="p-6 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
     <p class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Category</p>
     <span class="inline-flex h-1 w-40 rounded bg-indigo-500 mt-2"></span>
-    <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Berikut merupakan daftar category yang ada di O-Library</p>
+    <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Berikut merupakan daftar category yang ada di dalam webiste kami O-Library, untuk mengunjunginya silahkan klin halaman category diatas.</p>
     <div class="mt-12">
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <div class="pt-6">
@@ -100,7 +100,7 @@
             <div class="-mt-6">
               <img width="100" class="rounded-lg mx-auto shadow-lg bg-[#C7BCA1] hover:scale-150" src="http://localhost:8000/assets/img/komik.png" alt="">
               <h3 class="mt-2 text-lg font-medium tracking-tight text-gray-900 group-hover:text-white">Comic</h3>
-              <p class="text-base text-gray-500 group-hover:text-white selection:bg-[#FFF8EA] selection:text-slate-900">Komik adalah media untuk mengekspresikan ide melalui gambar, biasanya digabungkan dengan teks atau informasi visual lainnya.</p>
+              <p class="text-base text-gray-500 group-hover:text-white selection:bg-[#FFF8EA] selection:text-slate-900">Komik adalah media untuk mengekspresikan ide melalui gambar, biasanya digabungkan dengan teks atau informasi visual atau lainnya.</p>
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@
 
     </div>
     <div class="flex p-5">
-      <div class="h-full text-center ml-5 p-5 bg-gray-300 hover:bg-gray-200 rounded-2xl">
+      <div class="h-[300px] w-[500px] text-center ml-5 p-5 bg-gray-300 hover:bg-gray-200 rounded-2xl">
         <img class="h-24 w-24 object-cover rounded-full inline-block border-2 border-gray-700 bg-opacity-10 items-center justify-center" src="http://localhost:8000/assets/img/Charactor1.png" alt="">
         <svg class="absolute top-0 left-0 transform-translate-x-3 -translate-y-2 h-8 w-8 text-gray-600 hover:scale-150" fill="currentColor" class="block text-yellow-500 w-5 h-5" viewBox="0 0 32 32" aria-hidden="true">
           <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
@@ -147,7 +147,7 @@
 
         <p class="leading-relaxed">Sangat membantu dalam mengakses informasi buku bacaan berkualitas secara fleksibel tanpa terbatas oleh ruang dan waktu.</p>
         <span class="inline-flex h-1 w-14 rounded bg-indigo-500 mt-4 mb-2"></span>
-        <h2 class="title-font font-medium text-sm tracking-wider">Putra</h2>
+        <h2 class="title-font font-medium text-sm tracking-wider">Putra Alibaba</h2>
         <p class="text-gray-500">Mahasiswa</p>
         <ul class="flex justify-center mb-0">
           <li>
@@ -192,7 +192,8 @@
           </li>
         </ul>
       </div>
-      <div class="h-full text-center ml-5 p-5 bg-gray-300 hover:bg-gray-200 rounded-2xl">
+      
+      <div class="h-[300px] w-[500px] text-center ml-5 p-5 bg-gray-300 hover:bg-gray-200 rounded-2xl">
         <img class="h-24 w-24 object-cover rounded-full inline-block border-2 border-gray-700 bg-opacity-10 items-center justify-center" src="http://localhost:8000/assets/img/Charactor2.png" alt="">
         <svg class="absolute top-0 left-0 transform-translate-x-3 -translate-y-2 h-8 w-8 text-gray-600 hover:scale-150" fill="currentColor" class="block text-yellow-500 w-5 h-5" viewBox="0 0 32 32" aria-hidden="true">
           <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
@@ -200,7 +201,7 @@
 
         <p class="leading-relaxed">Dengan adanya perpustakaan digital ini lebih memudahkan dan juga lebih praktis.</p>
         <span class="inline-flex h-1 w-14 rounded bg-indigo-500 mt-4 mb-2"></span>
-        <h2 class="title-font font-medium text-sm tracking-wider">Putra</h2>
+        <h2 class="title-font font-medium text-sm tracking-wider">Putra Jhonson</h2>
         <p class="text-gray-500">Mahasiswa</p>
         <ul class="flex justify-center mb-0">
           <li>
@@ -245,7 +246,8 @@
           </li>
         </ul>
       </div>
-      <div class="h-full text-center ml-5 p-5 bg-gray-300 hover:bg-gray-200 rounded-2xl">
+
+      <div class="h-[300px] w-[500px] text-center ml-5 p-5 bg-gray-300 hover:bg-gray-200 rounded-2xl">
         <img class="h-24 w-24 object-cover rounded-full inline-block border-2 border-gray-700 bg-opacity-10 items-center justify-center" src="http://localhost:8000/assets/img/Charactor3.png" alt="">
          <svg class="absolute top-0 left-0 transform-translate-x-3 -translate-y-2 h-8 w-8 text-gray-600 hover:scale-150" fill="currentColor" class="block text-yellow-500 w-5 h-5" viewBox="0 0 32 32" aria-hidden="true">
           <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
@@ -253,7 +255,7 @@
 
         <p class="leading-relaxed">Wesbite perpustakaannya keren, buku yang tersedia cukup lengkap dan cukup banyak genre yang tersedia.</p>
         <span class="inline-flex h-1 w-14 rounded bg-indigo-500 mt-4 mb-2"></span>
-        <h2 class="title-font font-medium text-sm tracking-wider">Dio</h2>
+        <h2 class="title-font font-medium text-sm tracking-wider">Dio Anugrah</h2>
         <p class="text-gray-500">Mahasiswa</p>
         <ul class="flex justify-center mb-0">
           <li>
@@ -304,10 +306,10 @@
 
 
 <!-- Blog section -->
-<div class="relative bg-amber-50 py-16 sm:py-24 lg:py-32">
+<div class="relative bg-amber-50 py-16 sm:py-24 lg:py-32" id="buku">
   <div class="relative">
     <div class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-      <p id="buku" class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Trending Books</p>
+      <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Trending Books</p>
       <p class="mt-5 mx-auto max-w-prose text-xl text-gray-500">Berikut merupakan beberapa buku yang sering dibaca atau di download oleh user</p>
     </div>
     
@@ -316,7 +318,7 @@
       @foreach($buku as $b)
       <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
         <div class="flex-shrink-0">
-          <img class="h-48 w-full object-cover" src="{{ asset('storage/' . $b->image) }}" alt="">
+          <img class="h-96 w-full object-cover" src="{{ asset('storage/' . $b->image) }}" alt="">
         </div>
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
